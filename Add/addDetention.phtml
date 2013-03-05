@@ -1,0 +1,48 @@
+<html>
+    <body>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/add-detention.css">
+        <title>Add Detention</title>
+    </head>
+
+    <?
+    $con = mysql_connect("localhost","root","");
+    if (!$con)
+    {
+        die('Could not connect: ' . mysql_error());
+    }
+
+    ?>
+
+    <div id="addDetention">
+            <h1>Academic Enrichment</h1>
+
+            <h3>To refer a student please fill out the form below:</h3>
+
+            <form action=submitDetention.php method="GET">
+                <div class="form-piece">
+                    <label>Student Name:<span class="required"> (*)</span></label>
+                    <input type="text" name="sname">
+                </div>
+
+                <div class="form-piece">
+                    <label>Subject</label>
+
+                    <select>
+                        <option value="test"></option>
+                    </select>
+                </div>
+
+                <div class="form-piece">
+                    <label>Teacher: <span class="required">(*)</span></label>
+                    <select>
+                        <option value="test"></option>
+                    </select>
+                </div>
+            </form>
+
+
+        </div>
+
+    </body>
+</html>
