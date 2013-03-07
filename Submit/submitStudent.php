@@ -10,9 +10,9 @@ if ($con->connect_errno)
     die('Could not connect: ' . $con->connect_error);
 }
 
-$myQuery = "SELECT Student_FirstName, Student_LastName FROM student
-            WHERE Student_FirstName ='".$_POST['first_name']."'
-            AND Student_LastName ='".$_POST['last_name']."'";
+$myQuery = "SELECT FirstName, LastName FROM student
+            WHERE FirstName ='".$_POST['first_name']."'
+            AND LastName ='".$_POST['last_name']."'";
 
 $result = $con->query($myQuery) or die($myQuery."<br/><br/>".mysql_error());
 if($result->num_rows > 0)
@@ -20,8 +20,8 @@ if($result->num_rows > 0)
     echo "<p>Student already exists</p>";
 
 }else{
-    $sql ="INSERT INTO student (Student_FirstName, Student_LastName, Grade, Student_Email, Parent_Email)
-VALUES ('$_POST[first_name]', '$_POST[last_name]', '$_POST[grade]', '$_POST[student_email]', '$_POST[parent_email]')
+    $sql ="INSERT INTO student (FirstName, LastName, Grade, StudentEmail, ParentEmail, ParentEmail2)
+VALUES ('$_POST[first_name]', '$_POST[last_name]', '$_POST[grade]', '$_POST[student_email]', '$_POST[parent_email]', '$_POST[parent_email2]')
 ";
 
     if (!$con->query($sql))

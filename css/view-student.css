@@ -1,0 +1,9 @@
+/********Common********/
+body{background: #FFEB89; font-family: Arial,Helvetica,sans-serif;}
+div.form-piece{display: block;}
+
+/***********************************************/
+div.list ul li{list-style-type: none;}
+div.list ul li span.title{font-weight: bold;}
+
+div.view-students a{display: block;}

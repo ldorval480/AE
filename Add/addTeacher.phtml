@@ -1,0 +1,34 @@
+<html>
+<body>
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/add-student.css">
+    <title>Add Student</title>
+</head>
+<div id="addTeacher">
+    <h1>Add Student</h1>
+    <form action ="../Submit/submitTeacher.php" method="POST">
+        <div class="form-piece">
+            <label>First Name:</label>
+            <input type="text" name="first_name">
+        </div>
+
+        <div class="form-piece">
+            <label>Last Name:</label>
+            <input type="text" name="last_name">
+        </div>
+
+        <div class="form-piece">
+            <label>Email:</label>
+            <input type="text" name="teacher_email">
+        </div>
+
+        <div class="form-piece">
+            <label>Admin:</label>
+            <input type="checkbox" name="admin">
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
