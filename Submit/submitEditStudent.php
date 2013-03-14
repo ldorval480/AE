@@ -27,7 +27,7 @@ if ($con->connect_errno)
 
 ?>
 
-<a href="../index.phtml">Return to Main page.</a>
+<a href="../View/Form/viewStudentsForm.phtml">Return to Students.</a>
 
 </body>
 </html>

@@ -12,7 +12,20 @@
         {
             die('Could not connect: ' . $con->connect_error);
         }
+        ?>
+        <form action="../Submit/viewStudents.php" method="POST">
+        <select name="grade">
+            <option value="8">8th Gr</option>
+            <option value="9">9th Gr</option>
+            <option value="10">10th Gr</option>
+            <option value="11">11th Gr</option>
+            <option value="12">12th Gr</option>
+            <option value="all">All</option>
+        </select>
 
+        <input type="submit" value="Submit">
+        </form>
+        <?
         if($_POST['grade'] === 'all')
         {
             echo "<h1>All Students</h1>";

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="becddcce-1f39-4a80-bb20-1e61b3ec27ba" name="Default" comment="" />
+    <list default="true" id="becddcce-1f39-4a80-bb20-1e61b3ec27ba" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Submit/submitEditStudent.php" afterPath="$PROJECT_DIR$/Submit/submitEditStudent.php" />
+    </list>
     <ignored path="AE.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,28 +24,28 @@
       <content type="file-editors">
         <state>
           <leaf>
-            <file leaf-file-name="addStudent.phtml" pinned="false" current="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/Add/addStudent.phtml">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state line="6" column="25" selection-start="179" selection-end="179" vertical-scroll-proportion="-3.9230769">
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
             <file leaf-file-name="viewStudent.php" pinned="false" current="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/View/viewStudent.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state line="4" column="11" selection-start="144" selection-end="144" vertical-scroll-proportion="-2.6153846">
+                  <state line="54" column="7" selection-start="1789" selection-end="1789" vertical-scroll-proportion="0.0">
                     <folding />
                   </state>
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="submitStudent.php" pinned="false" current="false" current-in-tab="true">
+            <file leaf-file-name="submitStudent.php" pinned="false" current="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/Submit/submitStudent.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state line="10" column="1" selection-start="252" selection-end="252" vertical-scroll-proportion="0.36093417">
+                  <state line="33" column="1" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0">
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="addTeacher.phtml" pinned="false" current="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/Add/addTeacher.phtml">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state line="32" column="7" selection-start="872" selection-end="872" vertical-scroll-proportion="0.77751195">
                     <folding />
                   </state>
                 </provider>
@@ -57,46 +59,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="editStudent.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Edit/editStudent.php">
+      <file leaf-file-name="submitTeacher.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Submit/submitTeacher.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="948" selection-end="948" vertical-scroll-proportion="-13.076923">
+            <state line="34" column="13" selection-start="1117" selection-end="1117" vertical-scroll-proportion="-11.769231">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewStudentsForm.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/Form/viewStudentsForm.phtml">
+      <file leaf-file-name="manageStudent.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Manage/manageStudent.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="42" selection-start="636" selection-end="636" vertical-scroll-proportion="-12.423077">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addDetention.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Add/addDetention.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="28" selection-start="137" selection-end="137" vertical-scroll-proportion="5.230769">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view-student.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/view-student.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="36" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add-student.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/add-student.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
+            <state line="14" column="7" selection-start="380" selection-end="380" vertical-scroll-proportion="-9.153846">
               <folding />
             </state>
           </provider>
@@ -105,34 +80,75 @@
       <file leaf-file-name="viewStudents.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/Submit/viewStudents.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="75" selection-start="797" selection-end="797" vertical-scroll-proportion="-11.769231">
+            <state line="43" column="13" selection-start="1551" selection-end="1551" vertical-scroll-proportion="-9.461538">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="submitEditStudent.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="viewStudentsForm.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/View/Form/viewStudentsForm.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="7" selection-start="660" selection-end="660" vertical-scroll-proportion="-15.038462">
+              <folding>
+                <marker date="1362526319241" expanded="true" signature="5:659" placeholder="..." />
+                <marker date="1362526319241" expanded="true" signature="16:140" placeholder="..." />
+                <marker date="1362526319241" expanded="true" signature="262:649" placeholder="..." />
+                <marker date="1362526319241" expanded="true" signature="292:591" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/manage.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editTeacher.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Edit/editTeacher.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="24" selection-start="911" selection-end="911" vertical-scroll-proportion="-15.692307">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editStudent.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Edit/editStudent.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="11.615385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="submitEditStudent.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Submit/submitEditStudent.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="41" selection-start="700" selection-end="700" vertical-scroll-proportion="-14.384615">
+            <state line="29" column="38" selection-start="765" selection-end="765" vertical-scroll-proportion="0.7541322">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addTeacher.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Add/addTeacher.phtml">
+      <file leaf-file-name="add-student.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/add-student.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="33" selection-start="754" selection-end="754" vertical-scroll-proportion="-15.192307">
+            <state line="10" column="0" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="submitTeacher.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Submit/submitTeacher.php">
+      <file leaf-file-name="common.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="35" selection-start="511" selection-end="511" vertical-scroll-proportion="0.5302144">
+            <state line="0" column="0" selection-start="0" selection-end="99" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -145,25 +161,28 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Edit/editStudent.phtml" />
-        <option value="$PROJECT_DIR$/View/Form/viewStudentForm.phtml" />
-        <option value="$PROJECT_DIR$/View/Submit/viewStudent.php" />
-        <option value="$PROJECT_DIR$/index.phtml" />
         <option value="$PROJECT_DIR$/View/viewStudent.phtml" />
-        <option value="$PROJECT_DIR$/View/viewStudent.php" />
-        <option value="$PROJECT_DIR$/Add/addStudent.phtml" />
         <option value="$PROJECT_DIR$/View/Form/viewStudentsForm.phtml" />
-        <option value="$PROJECT_DIR$/css/add-student.css" />
-        <option value="$PROJECT_DIR$/css/view-student.css" />
-        <option value="$PROJECT_DIR$/View/Submit/viewStudents.php" />
         <option value="$PROJECT_DIR$/Submit/submitStudent.php" />
         <option value="$PROJECT_DIR$/Edit/editStudent.php" />
-        <option value="$PROJECT_DIR$/Submit/submitEditStudent.php" />
+        <option value="$PROJECT_DIR$/Add/addStudent.phtml" />
+        <option value="$PROJECT_DIR$/css/add-student.css" />
+        <option value="$PROJECT_DIR$/View/viewStudent.php" />
+        <option value="$PROJECT_DIR$/css/view-student.css" />
+        <option value="$PROJECT_DIR$/index.phtml" />
+        <option value="$PROJECT_DIR$/Manage/manageTeacher.phtml" />
         <option value="$PROJECT_DIR$/Add/addTeacher.phtml" />
         <option value="$PROJECT_DIR$/Submit/submitTeacher.php" />
+        <option value="$PROJECT_DIR$/css/manage.css" />
+        <option value="$PROJECT_DIR$/Manage/manageStudent.phtml" />
+        <option value="$PROJECT_DIR$/View/Submit/viewStudents.php" />
+        <option value="$PROJECT_DIR$/Submit/submitEditStudent.php" />
       </list>
     </option>
   </component>
@@ -172,12 +191,11 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="56" />
+    <option name="width" value="1066" />
+    <option name="height" value="728" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -203,6 +221,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -295,6 +314,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Manage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Edit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -329,13 +362,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHub/PortableGit_93e8418133eb85e81a81e5e19c272776524496c6/cmd/git.exe" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
@@ -385,15 +418,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="56" y="0" width="1066" height="728" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14848486" sideWeight="0.9726027" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17031872" sideWeight="0.67077464" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922536" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -402,6 +434,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -462,114 +495,119 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.phtml">
+    <entry file="file://$PROJECT_DIR$/Manage/manageTeacher.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="29" selection-start="172" selection-end="172" vertical-scroll-proportion="-3.9230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/add-detention.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="189" selection-end="224" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/navigation.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/Form/viewStudentsForm.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="42" selection-start="636" selection-end="636" vertical-scroll-proportion="-12.423077">
+        <state line="6" column="21" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/View/viewStudent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="11" selection-start="144" selection-end="144" vertical-scroll-proportion="-2.6153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/add-student.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/Submit/viewStudents.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="75" selection-start="797" selection-end="797" vertical-scroll-proportion="-11.769231">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/view-student.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="36" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Add/addDetention.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="28" selection-start="137" selection-end="137" vertical-scroll-proportion="5.230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/_superglobals.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="0" selection-start="2042" selection-end="2042" vertical-scroll-proportion="0.52112675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Edit/editStudent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="948" selection-end="948" vertical-scroll-proportion="-13.076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Submit/submitEditStudent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="41" selection-start="700" selection-end="700" vertical-scroll-proportion="-14.384615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Add/addTeacher.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="33" selection-start="754" selection-end="754" vertical-scroll-proportion="-15.192307">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Add/addStudent.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="179" selection-end="179" vertical-scroll-proportion="-3.9230769">
+        <state line="54" column="7" selection-start="1789" selection-end="1789" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Submit/submitStudent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="1" selection-start="252" selection-end="252" vertical-scroll-proportion="0.36093417">
+        <state line="33" column="1" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Delete/deleteStudent.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Submit/submitTeacher.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="35" selection-start="511" selection-end="511" vertical-scroll-proportion="0.5302144">
+        <state line="34" column="13" selection-start="1117" selection-end="1117" vertical-scroll-proportion="-11.769231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/add-student.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="99" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/manage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Manage/manageStudent.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="7" selection-start="380" selection-end="380" vertical-scroll-proportion="-9.153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Form/viewStudentsForm.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="7" selection-start="660" selection-end="660" vertical-scroll-proportion="-15.038462">
+          <folding>
+            <marker date="1362526319241" expanded="true" signature="5:659" placeholder="..." />
+            <marker date="1362526319241" expanded="true" signature="16:140" placeholder="..." />
+            <marker date="1362526319241" expanded="true" signature="262:649" placeholder="..." />
+            <marker date="1362526319241" expanded="true" signature="292:591" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Submit/viewStudents.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="13" selection-start="1551" selection-end="1551" vertical-scroll-proportion="-9.461538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Reports/AccountReport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Add/addTeacher.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="7" selection-start="872" selection-end="872" vertical-scroll-proportion="0.77751195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Edit/editTeacher.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="24" selection-start="911" selection-end="911" vertical-scroll-proportion="-15.692307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Edit/editStudent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="11.615385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Submit/submitEditStudent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="38" selection-start="765" selection-end="765" vertical-scroll-proportion="0.7541322">
           <folding />
         </state>
       </provider>

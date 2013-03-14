@@ -47,7 +47,7 @@
                 </li>
             </ul>
         </div>
-        <a href=<?= "../Edit/editStudent.php?id=".$_GET['id']?> >Edit</a>
+        <a class="edit-button" href=<?= "../Edit/editStudent.php?id=".$_GET['id']?>>Edit</a>
 
 
         <? $con->close(); ?>
