@@ -14,7 +14,7 @@ $myQuery = "SELECT FirstName, LastName FROM student
             WHERE FirstName ='".$_POST['first_name']."'
             AND LastName ='".$_POST['last_name']."'";
 
-$result = $con->query($myQuery) or die($myQuery."<br/><br/>".mysql_error());
+$result = $con->query($myQuery) or die($myQuery."<br/><br/>". $con->error);
 if($result->num_rows > 0)
 {
     echo "<p>Student already exists</p>";
@@ -36,7 +36,7 @@ VALUES ('$_POST[first_name]', '$_POST[last_name]', '$_POST[grade]', '$_POST[stud
 
 ?>
 
-<a href="../index.phtml">Return to Main page.</a>
+<a href="../Manage/manageStudent.phtml">Return to Student page.</a>
 
 </body>
 </html>

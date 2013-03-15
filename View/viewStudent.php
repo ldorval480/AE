@@ -1,10 +1,14 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../css/view-student.css">
+        <link rel="stylesheet" type="text/css" href="../css/views.css">
         <title>View Student</title>
     </head>
 
     <body>
+    <div class="wrapper">
+        <div class="breadcrumbs">
+            <a href="../View/Form/viewStudentsForm.phtml">< Students</a>
+        </div>
         <h1>View Student</h1>
         <?
             $con = new mysqli('localhost', 'root', '', "academicenrichment");
@@ -48,8 +52,10 @@
             </ul>
         </div>
         <a class="edit-button" href=<?= "../Edit/editStudent.php?id=".$_GET['id']?>>Edit</a>
+        <a class="delete-button" onclick="return confirm('Are you sure?');" href=<?= "../Delete/deleteStudent.php?id=".$_GET['id']?>>Delete</a>
 
 
         <? $con->close(); ?>
+    </div>
     </body>
 </html>

@@ -9,5 +9,11 @@ div.list ul li span.title{font-weight: bold;}
 div.view-students a{display: block;}
 a.edit-button{text-decoration: none; border: solid 1px #333; padding:5px; color:#333; background: #fff; float:left;}
 a.delete-button{text-decoration: none; border: solid 1px #333; padding:5px; color:#333; background: #fff; float:right;}
+span.y{color:green;}
+span.n{color:red;}
 
-#viewStudent{width:400px;}
+/**********************Student******************/
+div.wrapper{width:400px;}
+
+
+/*****************************Staff*********************/

@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../../css/view-student.css">
+        <link rel="stylesheet" type="text/css" href="../../css/views.css">
         <title>View Student</title>
     </head>
 

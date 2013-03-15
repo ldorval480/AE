@@ -1,13 +1,13 @@
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="../css/view-student.css">
+    <link rel="stylesheet" type="text/css" href="../css/views.css">
     <title>View Student</title>
 </head>
 
 <body>
-<div id="viewStudent">
+<div class="wrapper">
     <div class="breadcrumbs">
-        <a href="../View/viewTeachers.php">< Staff</a>
+        <a href="viewStaff.php">< Staff</a>
     </div>
     <h1>View Staff Member</h1>
     <?
@@ -38,19 +38,9 @@
                 <span class="text"><?= $row['TeacherEmail'] ?></span>
             </li>
             <li>
-                <span class="title">Is Admin: </span>
+                <span class="title">Teacher: </span>
                 <span class="text">
-                    <?if($row['admin']){
-                        echo "<span class='y'>Yes</span>";
-                    }else{
-                        echo "<span class='n'>No</span>";
-                    }?>
-                </span>
-            </li>
-            <li>
-                <span class="title">Is Teacher: </span>
-                <span class="text">
-                    <?if($row['teach']){
+                    <?if($row['TeacherFlag']){
                     echo "<span class='y'>Yes</span>";
                 }else{
                     echo "<span class='n'>No</span>";
@@ -58,9 +48,19 @@
                 </span>
             </li>
             <li>
-                <span class="title">Is CEA: </span>
+                <span class="title">Admin: </span>
                 <span class="text">
-                    <?if($row['cea']){
+                    <?if($row['AdminFlag']){
+                        echo "<span class='y'> Yes</span>";
+                    }else{
+                        echo "<span class='n'> No</span>";
+                    }?>
+                </span>
+            </li>
+            <li>
+                <span class="title">CEA: </span>
+                <span class="text">
+                    <?if($row['CeaFlag']){
                     echo "<span class='y'>Yes</span>";
                 }else{
                     echo "<span class='n'>No</span>";
@@ -69,8 +69,8 @@
             </li>
         </ul>
     </div>
-    <a class="edit-button" href=<?= "../Edit/editStaff.php?id=".$_GET['id']?>>Edit</a>
-    <a class="delete-button" onclick="return confirm('Are you sure?');" href=<?= "../Delete/deleteStaff.php?id=".$_GET['id']?>>Delete</a>
+    <a class="edit-button" href=<?= "../Edit/editStaffMember.php?id=".$_GET['id']?>>Edit</a>
+    <a class="delete-button" onclick="return confirm('Are you sure?');" href=<?= "../Delete/deleteStaffMember.php?id=".$_GET['id']?>>Delete</a>
 
 
     <? $con->close(); ?>

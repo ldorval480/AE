@@ -26,7 +26,7 @@
             $teacher = false;
             $cea = false;
 
-            if(isset($_POST['role'])){ $admin = true;}
+            if(isset($_POST['admin'])){ $admin = true;}
             if(isset($_POST['teach'])){ $teacher = true;}
             if(isset($_POST['cea'])){ $cea = true;}
 
@@ -37,7 +37,7 @@
             }else{
 
             $sql ="INSERT INTO staff (FirstName, LastName, TeacherEmail, AdminFlag, TeacherFlag, CeaFlag)
-        VALUES ('$_POST[first_name]', '$_POST[last_name]', '$_POST[teacher_email]', '".$admin."', '".$teacher."', '".$cea."')";
+        VALUES ('$_POST[first_name]', '$_POST[last_name]', '$_POST[email]', '".$admin."', '".$teacher."', '".$cea."')";
 
             if (!$con->query($sql))
             {

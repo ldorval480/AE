@@ -2,14 +2,14 @@
 <body>
 <head>
     <link rel="stylesheet" type="text/css" href="../css/add-student.css">
-    <title>Add Teacher</title>
+    <title>Add Staff Member</title>
 </head>
 <div id="addTeacher">
     <div class="breadcrumbs">
-        <a href="../index.phtml">Home</a> > <a href="../Manage/manageTeacher.phtml">Manage Teacher</a>
+        <a href="../index.phtml">Home</a> > <a href="../Manage/manageStaff.phtml">Manage Teacher</a>
     </div>
-    <h1>Add Teacher</h1>
-    <form action ="../Submit/submitTeacher.php" method="POST">
+    <h1>Add Staff Member</h1>
+    <form action ="../Submit/submitStaff.php" method="POST">
         <div class="form-piece">
             <label>First Name:</label>
             <input type="text" name="first_name">
@@ -22,17 +22,18 @@
 
         <div class="form-piece">
             <label>Email:</label>
-            <input type="text" name="teacher_email">
+            <input type="text" name="email">
+        </div>
+
+        <h4>Roles:</h4>
+        <div class="form-piece">
+            <label>Teacher:</label>
+            <input type="checkbox" name="teach" value="teach" >
         </div>
 
         <div class="form-piece">
             <label>Admin:</label>
             <input type="checkbox" name="admin" value="admin" >
-        </div>
-
-        <div class="form-piece">
-            <label>Teacher:</label>
-            <input type="checkbox" name="teach" value="teach" >
         </div>
 
         <div class="form-piece">

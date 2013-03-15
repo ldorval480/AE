@@ -5,16 +5,12 @@
         <title>Add Detention</title>
     </head>
 
-    <?
-    $con = mysql_connect("localhost","root","");
-    if (!$con)
-    {
-        die('Could not connect: ' . mysql_error());
-    }
-
-    ?>
 
     <div id="addDetention">
+        <div class="breadcrumbs">
+            <a href="../index.phtml">Home</a> > <a href="../Manage/manageDetention.phtml">Manage Detention</a>
+        </div>
+
             <h1>Academic Enrichment</h1>
 
             <h3>To refer a student please fill out the form below:</h3>

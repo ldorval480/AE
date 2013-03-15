@@ -1,11 +1,11 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="../css/add-student.css">
-    <title>Edit Student</title>
+    <title>Edit Staff Member</title>
 </head>
 
 <body>
-<h1>Edit Student</h1>
+<h1>Edit Staff Member</h1>
 <?
 $con = new mysqli('localhost', 'root', '', "academicenrichment");
 
@@ -36,10 +36,19 @@ $row = $result->fetch_array(MYSQLI_ASSOC);
 
 <div class="form-piece">
     <label>Email:</label>
-    <input type="text" name="grade" value=<?= $row['TeacherEmail'] ?>>
+    <input type="text" name="email" value=<?= $row['TeacherEmail'] ?>>
 </div>
 
 <h4>Roles:</h4>
+<div class="form-piece">
+    <label>Teacher:</label>
+    <?if($row['TeacherFlag'] == true):?>
+    <input type="checkbox" name="teach" value="teach" checked >
+    <?else:?>
+    <input type="checkbox" name="teach" value="teach">
+    <?endif;?>
+</div>
+
 <div class="form-piece">
     <label>Admin:</label>
     <?if($row['AdminFlag'] == true):?>
@@ -50,16 +59,7 @@ $row = $result->fetch_array(MYSQLI_ASSOC);
 </div>
 
 <div class="form-piece">
-    <label>Admin:</label>
-    <?if($row['TeacherFlag'] == true):?>
-    <input type="checkbox" name="teach" value="teach" checked >
-    <?else:?>
-    <input type="checkbox" name="teach" value="teach">
-    <?endif;?>
-</div>
-
-<div class="form-piece">
-    <label>Admin:</label>
+    <label>CEA:</label>
     <?if($row['CeaFlag'] == true):?>
     <input type="checkbox" name="cea" value="cea" checked >
     <?else:?>
