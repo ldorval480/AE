@@ -5,6 +5,9 @@
     <title>Add Teacher</title>
 </head>
 <div id="addTeacher">
+    <div class="breadcrumbs">
+        <a href="../index.phtml">Home</a> > <a href="../Manage/manageTeacher.phtml">Manage Teacher</a>
+    </div>
     <h1>Add Teacher</h1>
     <form action ="../Submit/submitTeacher.php" method="POST">
         <div class="form-piece">
@@ -25,6 +28,16 @@
         <div class="form-piece">
             <label>Admin:</label>
             <input type="checkbox" name="admin" value="admin" >
+        </div>
+
+        <div class="form-piece">
+            <label>Teacher:</label>
+            <input type="checkbox" name="teach" value="teach" >
+        </div>
+
+        <div class="form-piece">
+            <label>CEA:</label>
+            <input type="checkbox" name="cea" value="cea" >
         </div>
 
         <input type="submit" value="Submit">
