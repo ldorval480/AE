@@ -1,0 +1,27 @@
+<html>
+<body>
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/add-student.css">
+    <title>Add Subject</title>
+</head>
+<div id="addSubject">
+    <div class="breadcrumbs">
+        <a href="../index.phtml">Home</a> > <a href="../Manage/manageSubject.phtml">Manage Subject</a>
+    </div>
+    <h1>Add Student</h1>
+    <form action ="../Submit/submitSubject.php" method="POST">
+        <div class="form-piece">
+            <div class="form-label"><label>Name:</label></div>
+            <input type="text" name="name">
+        </div>
+
+        <div class="form-piece">
+            <div class="form-label"><label>Block:</label></div>
+            <input type="text" name="block">
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>

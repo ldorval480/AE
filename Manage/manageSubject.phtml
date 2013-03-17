@@ -1,26 +1,16 @@
 <html>
-<body>
 <head>
-    <link rel="stylesheet" type="text/css" href="../css/add-student.css">
-    <title>Subjects</title>
+    <link rel="stylesheet" type="text/css" href="../css/navigation.css">
+    <title>Manage Subjects</title>
 </head>
-<div id="subject">
-    <h1>Subjects</h1>
-    <!-- <form action ="../Submit/submitTeacher.php" method="POST"> -->
+<body>
+<div id="navigation">
+    <a href="../index.phtml">Home</a>
+    <h1>Manage Subjects</h1>
+    <a class="navigation-button" href="../Add/addSubject.phtml">Add New Subject</a>
 
-    <div class="form-piece">
-        <label>put in subject stuff:</label>
-        <input type="text" name="username">
-    </div>
-
-    <div class="form-piece">
-        <label>Password:</label>
-        <input type="text" name="password">
-    </div>
-
-    <input type="submit" value="Login"> <br>
-    <input type="submit" value="Forgot Password">
-    </form>
+    <iframe src="../View/viewSubjects.php" width="800" height="400"></iframe>
 </div>
+
 </body>
 </html>

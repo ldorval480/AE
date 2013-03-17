@@ -1,7 +1,7 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="../css/views.css">
-    <title>View Staff</title>
+    <title>View Subject</title>
 </head>
 
 <body>
@@ -15,14 +15,14 @@
 
 
 
-        $myQuery = "SELECT FirstName, LastName, ID FROM staff ORDER BY LastName asc";
+    $myQuery = "SELECT * FROM subject ORDER BY Name asc, Block asc";
 
 
     if($result = $con->query($myQuery))
     {
         while($row = $result->fetch_array(MYSQLI_ASSOC))
         {
-            printf("<a href='viewStaffMember.php?id=%s'>%s, %s</a>",$row["ID"], $row["LastName"], $row["FirstName"]);
+            printf("<a href='viewSubject.php?id=%s'>%s, %s</a>",$row["ID"], $row["Name"], $row["Block"]);
         }
 
     }
