@@ -1,3 +1,4 @@
+
 <html>
     <body>
     <head>
@@ -20,7 +21,7 @@
 
                 $form = new HTML_QuickForm('addDetention');
 
-                $form->addElement
+                $form->
             ?>
 
 
