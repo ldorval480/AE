@@ -13,9 +13,33 @@
         die('Could not connect: ' . $con->connect_error);
     }
 
+    ?>
 
+    <form action="viewStaff.php" method="POST">
+        <label>Role: </label>
+        <select name="role">
+            <option value="TeacherFlag">Teacher</option>
+            <option value="AdminFlag">Admin</option>
+            <option value="CeaFlag">CEA</option>
+            <option value="all">All</option>
+        </select>
 
+    <input type="submit" value="Submit">
+    </form>
+
+    <?
+    if($_POST['role'] === 'all')
+    {
+        echo "<h1>All Staff</h1>";
         $myQuery = "SELECT FirstName, LastName, ID FROM staff ORDER BY LastName asc";
+    }else{
+        if($_POST['role'] == "TeacherFlag"){echo "<h1>Teachers</h1>";
+        }else if($_POST['role'] == "AdminFlag") {  echo "<h1>Admins</h1>";
+        }else if($_POST['role'] == "CeaFlag") { echo "<h1>CEAs</h1>"; }
+        $myQuery = "SELECT FirstName, LastName, ID FROM staff
+                    WHERE ".$_POST['role']."= true ORDER BY LastName asc";
+    }
+
 
 
     if($result = $con->query($myQuery))

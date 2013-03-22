@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../../css/views.css">
+        <link rel="stylesheet" type="text/css" href="../css/views.css">
         <title>View Student</title>
     </head>
 
@@ -40,7 +40,7 @@
         {
             while($row = $result->fetch_array(MYSQLI_ASSOC))
             {
-                printf("<a href='../viewStudent.php?id=%s'>%s, %s</a>",$row["ID"], $row["LastName"], $row["FirstName"]);
+                printf("<a href='viewStudent.php?id=%s'>%s, %s</a>",$row["ID"], $row["LastName"], $row["FirstName"]);
             }
 
         }

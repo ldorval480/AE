@@ -36,7 +36,7 @@ $row = $result->fetch_array(MYSQLI_ASSOC);
 
 <div class="form-piece">
     <label>Email:</label>
-    <input type="text" name="email" value=<?= $row['TeacherEmail'] ?>>
+    <input type="text" name="email" value=<?= $row['StaffEmail'] ?>>
 </div>
 
 <h4>Roles:</h4>
