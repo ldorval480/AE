@@ -10,9 +10,8 @@ if ($con->connect_errno)
     die('Could not connect: ' . $con->connect_error);
 }
 
-$myQuery = "SELECT Name, Block FROM subject
-            WHERE Name ='".$_POST['name']."'
-            AND Block ='".$_POST['block']."'";
+$myQuery = "SELECT Name FROM subject
+            WHERE Name ='".$_POST['name']."'";
 
 $result = $con->query($myQuery) or die($myQuery."<br/><br/>". $con->error);
 if($result->num_rows > 0)
@@ -20,8 +19,8 @@ if($result->num_rows > 0)
     echo "<p>Subject already exists</p>";
 
 }else{
-    $sql ="INSERT INTO subject (Name, Block)
-VALUES ('$_POST[name]', '$_POST[block]')";
+    $sql ="INSERT INTO subject (Name)
+VALUES ('$_POST[name]')";
 
     if (!$con->query($sql))
     {

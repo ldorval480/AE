@@ -33,10 +33,6 @@
                 <span class="title">Name: </span>
                 <span class="text"><?= $row['Name'] ?></span>
             </li>
-            <li>
-                <span class="title">Block: </span>
-                <span class="text"><?= $row['Block'] ?></span>
-            </li>
         </ul>
     </div>
     <a class="delete-button" onclick="return confirm('Are you sure?');" href=<?= "../Delete/deleteSubject.php?id=".$_GET['id']?>>Delete</a>
