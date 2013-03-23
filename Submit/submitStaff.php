@@ -35,9 +35,9 @@
                 echo "<p>Must have a role</p>";
                 echo "<FORM><INPUT Type='button' VALUE='Back' onClick='history.go(-1);return true;'></FORM>";
             }else{
-
-            $sql ="INSERT INTO staff (FirstName, LastName, TeacherEmail, AdminFlag, TeacherFlag, CeaFlag)
-        VALUES ('$_POST[first_name]', '$_POST[last_name]', '$_POST[email]', '".$admin."', '".$teacher."', '".$cea."')";
+            $fullName = $_POST['first_name']." ".$_POST['last_name'];
+            $sql ="INSERT INTO staff (FirstName, LastName, StaffEmail, AdminFlag, TeacherFlag, CeaFlag, FullName)
+        VALUES ('$_POST[first_name]', '$_POST[last_name]', '$_POST[email]', '$admin', '$teacher', '$cea', '$fullName')";
 
             if (!$con->query($sql))
             {

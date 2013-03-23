@@ -17,7 +17,7 @@ function setAutoComplete(field_id, results_id, get_url)
 	acURL 		= get_url;
 
 	// create the results div
-	$("#auto").append('<div id="' + results_id + '"></div>');
+	$(".auto").append('<div id="' + results_id + '"></div>');
 
 	// register mostly used vars
 	acSearchField	= $(acSearchId);

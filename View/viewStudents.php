@@ -13,7 +13,7 @@
             die('Could not connect: ' . $con->connect_error);
         }
         ?>
-        <form action="../Submit/viewStudents.php" method="POST">
+        <form action="viewStudents.php" method="POST">
         <select name="grade">
             <option value="8">8th Gr</option>
             <option value="9">9th Gr</option>
