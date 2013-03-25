@@ -20,9 +20,8 @@ if($result->num_rows > 0)
     echo "<p>Student already exists</p>";
 
 }else{
-    $fullName = $_POST['first_name']." ".$_POST["last_name"];
     $sql ="INSERT INTO student (FirstName, LastName, Grade, StudentEmail, ParentEmail, ParentEmail2, FullName)
-VALUES ('$_POST[first_name]', '$_POST[last_name]', '$_POST[grade]', '$_POST[student_email]', '$_POST[parent_email]', '$_POST[parent_email2]', '$fullName')
+VALUES ('$_POST[first_name]', '$_POST[last_name]', '$_POST[grade]', '$_POST[student_email]', '$_POST[parent_email]', '$_POST[parent_email2]')
 ";
 
     if (!$con->query($sql))

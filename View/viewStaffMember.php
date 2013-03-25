@@ -35,7 +35,7 @@
             </li>
             <li>
                 <span class="title">Email: </span>
-                <span class="text"><?= $row['TeacherEmail'] ?></span>
+                <span class="text"><?= $row['StaffEmail'] ?></span>
             </li>
             <li>
                 <span class="title">Teacher: </span>

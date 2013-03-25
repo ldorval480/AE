@@ -28,6 +28,6 @@ header("Content-type: ".$type."");
 header('Content-Disposition: attachment; filename="'.$name.'"');
 echo $content;
 
-http_redirect("relpath", array("name" => "value"), true, HTTP_REDIRECT_PERM);
+
 
 ?>

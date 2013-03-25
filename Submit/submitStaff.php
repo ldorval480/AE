@@ -19,8 +19,8 @@
         $result = $con->query($myQuery) or die($myQuery."<br/><br/>". $con->error);
         if($result->num_rows > 0)
         {
-            echo "<p>Teacher already exists</p>";
-            echo "<a href='../Manage/manageStaff.phtml'>Return to Teacher page.</a>";
+            echo "<p>Staff member already exists</p>";
+            echo "<a href='../Manage/manageStaff.phtml'>Return to Staff page.</a>";
         }else{
             $admin = false;
             $teacher = false;
@@ -35,18 +35,53 @@
                 echo "<p>Must have a role</p>";
                 echo "<FORM><INPUT Type='button' VALUE='Back' onClick='history.go(-1);return true;'></FORM>";
             }else{
-            $fullName = $_POST['first_name']." ".$_POST['last_name'];
-            $sql ="INSERT INTO staff (FirstName, LastName, StaffEmail, AdminFlag, TeacherFlag, CeaFlag, FullName)
-        VALUES ('$_POST[first_name]', '$_POST[last_name]', '$_POST[email]', '$admin', '$teacher', '$cea', '$fullName')";
+            $sql ="INSERT INTO staff (FirstName, LastName, StaffEmail, AdminFlag, TeacherFlag, CeaFlag)
+        VALUES ('$_POST[first_name]', '$_POST[last_name]', '$_POST[email]', '$admin', '$teacher', '$cea')";
+
+
 
             if (!$con->query($sql))
             {
                 die('Error: ' . $con->error);
             }
-            echo "<p>Teacher record added</p>";
+            echo "<p>Staff record added</p>";
+
+                $result = $con->query("SELECT MAX(ID) FROM staff");
+
+                $row = $result->fetch_array(MYSQLI_ASSOC);
+
+                $defaultPassword = $_POST['last_name']."_".$row['MAX(ID)'];
+
+                $encrypted_password = md5($defaultPassword);
+
+                $foundUsername = false;
+                $count = 0;
+                $user = "";
+
+                while($foundUsername == false)
+                {
+                    $user = strtolower(substr($_POST['first_name'], 0, $count+1).$_POST['last_name']);
+
+                    $myQuery = "SELECT ID FROM user WHERE Username = '". $user."'";
+
+                    $result = $con->query($myQuery) or die($myQuery."<br/><br/>". $con->error);
+
+                    if($result->num_rows <= 0){
+                        $foundUsername = true;
+                    }
+                    $count++;
+                }
+
+                $sql = "INSERT INTO user (Staff_ID, Password, Username)
+                    VALUES('".$row['MAX(ID)']."', '".$encrypted_password."', '".$user."')";
+
+                if (!$con->query($sql))
+                {
+                    die('Error: ' . $con->error);
+                }
 
             $con->close();
-            echo "<a href='../Manage/manageStaff.phtml'>Return to Teacher page.</a>";
+            echo "<a href='../Manage/manageStaff.phtml'>Return to Staff page.</a>";
             }
 
         }

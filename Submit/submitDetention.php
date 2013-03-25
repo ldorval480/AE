@@ -81,13 +81,19 @@ VALUES ('$date', '$_POST[block]', '$_POST[subject]', '$sID', '$tID', '$_POST[des
     $acceptable_extensions[18] = "docx";
     $acceptable_extensions[19] = "DOCX";
 
+
+    $count = 0;
+    foreach($_FILES['file']['name'] as $fileName)
+    {
+
+
     $validated = 1;
 
-    if($_FILES && $_FILES['file']['name']){
+    if($_FILES && $fileName){
 
         //make sure the file has a valid file extension
 
-        $file_info = pathinfo($_FILES['file']['name']);
+        $file_info = pathinfo($fileName);
         $acceptable_ext = 0;
 
         for($x = 0; $x < count($acceptable_extensions); $x++){
@@ -109,10 +115,9 @@ VALUES ('$date', '$_POST[block]', '$_POST[subject]', '$sID', '$tID', '$_POST[des
 
         // Get important information about the file and put it into variables
 
-        $fileName = $_FILES['file']['name'];
-        $tmpName  = $_FILES['file']['tmp_name'];
-        $fileSize = $_FILES['file']['size'];
-        $fileType = $_FILES['file']['type'];
+        $tmpName  = $_FILES['file']['tmp_name'][$count];
+        $fileSize = $_FILES['file']['size'][$count];
+        $fileType = $_FILES['file']['type'][$count];
 
         // Slurp the content of the file into a variable
 
@@ -125,12 +130,12 @@ VALUES ('$date', '$_POST[block]', '$_POST[subject]', '$sID', '$tID', '$_POST[des
             $fileName = addslashes($fileName);
         }
 
-        $file_info = pathinfo($_FILES['file']['name']);
+        $file_info = pathinfo($fileName);
 
         $sql = "INSERT INTO assignment (Detention_ID, File_Name, File_Type, File_Size, File_Content, File_Extension)
              VALUES ('".$row['MAX(ID)']."','".$fileName."', '".$fileType."', '".$fileSize."', '".$content."', '".$file_info['extension']."')";
 
-
+        $count++;
 
         $result = $con->query($sql);
 
@@ -147,6 +152,7 @@ VALUES ('$date', '$_POST[block]', '$_POST[subject]', '$sID', '$tID', '$_POST[des
     }else{
         echo "Invalid file.\n";
         exit;
+    }
     }
 
 }

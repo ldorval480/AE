@@ -4,7 +4,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="../css/add-detention.css">
         <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
-        <title>Add Detention</title>
+        <title>Add Referral</title>
         <script src="../js/jquery-1.9.1.js"></script>
         <script src="../js/jquery-ui.js"></script>
 
@@ -88,8 +88,8 @@
                     <textarea  name="description"></textarea>
                 </div>
 
-                <label for="file">Filename:</label>
-                <input type="file" name="file" id="file">
+                <label for="file">Filename: (Max 2M)</label>
+                <input type="file" name="file[]" id="file" multiple />
 
 
             <input type="submit" value="Submit">
