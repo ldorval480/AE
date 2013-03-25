@@ -9,12 +9,18 @@ if ($con->connect_errno)
 
 $text = $_GET['term'];
 
-$result = $con->query("SELECT FullName FROM student WHERE FullName LIKE '%$text%' ORDER BY FullName ASC");
+$sql = "SELECT FirstName, LastName FROM student
+        WHERE (FirstName LIKE '%$text%' and LastName LIKE '%$text%')
+        OR FirstName LIKE '%$text%'
+        OR LastName LIKE '%$text%'
+        ORDER BY LastName ASC";
+
+$result = $con->query($sql);
 $students = array();
 
 while ($row = $result->fetch_array(MYSQL_ASSOC))
 {
-    $students[] = $row['FullName'];
+    $students[] = $row['FirstName']." ".$row['LastName'];
 }
 
 

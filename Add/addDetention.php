@@ -49,7 +49,7 @@
 
             <h3>To refer a student please fill out the form below:</h3>
 
-            <form action ="../Submit/submitDetention.php" method="POST">
+            <form action ="../Submit/submitDetention.php" method="POST" enctype="multipart/form-data">
                 <div class="form-piece">
                         <label>Student:</label>
                         <input name="student_name" id="student_name">
@@ -87,6 +87,10 @@
                     <label>Description:</label>
                     <textarea  name="description"></textarea>
                 </div>
+
+                <label for="file">Filename:</label>
+                <input type="file" name="file" id="file">
+
 
             <input type="submit" value="Submit">
         </form>
